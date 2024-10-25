@@ -1,0 +1,151 @@
+.btn-sidebar{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    border-radius: 50%;
+    font-size: 1.5em;
+    background-color: #fff;
+    display: none;
+}
+
+.sidebar {
+  background-color: red;
+}
+
+.logo-sidebar {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: orange;
+}
+
+.img-logo {
+  width: 90px;
+  height: 90px;
+  background: url(../../../assets/logo.png) center center no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  grid-gap: 1em;
+}
+
+.links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 0.5em;
+  min-height: 500px;
+  flex: 5;
+}
+
+.links ul li {
+  height: 50px;
+  width: 250px;
+  display: flex;
+}
+
+.links ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  grid-gap: 1em;
+  text-decoration: none;
+  height: 100%;
+  color: #333;
+  font-size: 1em;
+  padding: 1em;
+  transition: 0.5s;
+  width: 90%;
+}
+
+.links ul li a:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.links ul li a:hover i {
+  background: linear-gradient(45deg, #3cb371, #e5bf3f, #b7794e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-delay: 0.2s;
+}
+
+.links ul li a i {
+  color: #b6b6b6;
+  font-size: 1.4em;
+  transition: 0.7s;
+}
+
+.options-group {
+  flex: 1;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  grid-gap: 1em;
+  color: #000;
+  font-weight: 600;
+  width: 250px;
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(182, 182, 182);
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 8px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transform: rotate(270deg);
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+  background-color: #21cc4c;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(1.5em);
+}

@@ -1,2 +1,54 @@
-<p-sidebar [(visible)]="yourVisibleVaraible"> content </p-sidebar>
-<button type="button" (click)="yourVisibleVaraible = true"></button>
+<p-sidebar [(visible)]="sidebarVisible">
+  <ng-template pTemplate="headless">
+    <div
+      class="flex flex-column h-full"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+      "
+    >
+      <div class="img-logo"></div>
+      <span
+        class="pi pi-times btn-sidebar"
+        (click)="sidebarVisible = false"
+      ></span>
+    </div>
+    <div class="links">
+      <ul>
+        <li>
+          <a href=""><i class="pi pi-home"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href=""><i class="pi pi-file"></i>Notícias</a>
+        </li>
+        <li>
+          <a href=""><i class="pi pi-calendar"></i>Eventos</a>
+        </li>
+        <li>
+          <a href=""><i class="pi pi-trophy"></i>Prêmios</a>
+        </li>
+        <li>
+          <a href=""><i class="pi pi-users"></i>Faça Parte</a>
+        </li>
+        <li>
+          <a href=""><i class="pi pi-search"></i>Sobre Nós</a>
+        </li>
+        <li>
+          <a href=""><i class="pi pi-phone"></i>Contato</a>
+        </li>
+      </ul>
+      <ul class="options-group">
+        <div class="options">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <span>Tema</span>
+        </div>
+      </ul>
+    </div>
+  </ng-template>
+</p-sidebar>
+<!-- <span class="pi pi-bars btn-sidebar" (click)="sidebarVisible = true"></span> -->
