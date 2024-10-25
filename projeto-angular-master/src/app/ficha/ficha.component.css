@@ -1,0 +1,133 @@
+/* Container geral */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Menu lateral */
+  .sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .theme-lang {
+    margin-top: 30px;
+  }
+  
+  .theme-btn,
+  .lang-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Conteúdo principal */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  .hero-text p {
+    font-size: 14px;
+  }
+  
+  .cta-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Formulário de inscrição */
+  .form-section {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .form-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  
